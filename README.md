@@ -1,16 +1,22 @@
 # Interview Examples
 
-Example Number 1
+Example 1
 ```powershell
 "1" + "1"
 ```
-Example Number 2
+Example 2
 ```powershell
 $Junk = Get-Process | where {$_.ProcessName -eq 'NOTEPAD'}
 "NOTEPAD Process Id: $Junk.ProcessName"
 ```
-Example Number 3
+Example 3
 ```powershell
 $Junk = Get-Process
 $Junk[$Junk.Count]
+```
+
+Example 1
+```powershell
+$Array = @(1..100)
+$Array -contains (6/2)
 ```
